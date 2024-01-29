@@ -13,7 +13,6 @@ export async function getData(url) {
     headers: { projectID: "40oh8jnbm661" },
   });
   const data = await res.json();
-  console.log("helper data = ", data);
   return data;
 }
 
@@ -27,6 +26,5 @@ export async function getDataAuth(url) {
     },
   });
   const data = await res.json();
-  console.log("helper auth data = ", data);
   return data;
 }

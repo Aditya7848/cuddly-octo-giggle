@@ -17,7 +17,7 @@ const Offers = () => {
 
     useEffect(() => {
         const url = 'https://academics.newtonschool.co/api/v1/bookingportals/offers'
-        getData(url).then(data => setOffersData(data))
+        getData(url).then(data => setOffersData(data.data.offers))
 
     }, [])
     if (!offersData) return
