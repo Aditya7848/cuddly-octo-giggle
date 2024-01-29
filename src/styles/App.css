@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*generic*/
+.df {
+  display: flex;
+}
+.fdc {
+  flex-direction: column;
+}
+.fdc {
+  flex-direction: column;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+.input-box {
+  padding: 5px;
+  font-size: 1.5rem;
+  width: 200px;
+}
+.search-btn {
+  font-size: 1.5rem;
+  padding: 3px 50px;
+  border-radius: 10px;
+}
+/*Nav*/
+.nav-comp {
+  padding: 1px 10px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: sticky;
+  top: 0px;
+  height: 80px;
+  background-color: white;
+}
+.navbar > a {
+  text-decoration: none;
+  color: black;
+}
+.nav-logo > img {
+  width: 150px;
+  height: 50px;
+  margin-right: 30px;
+}
+.nav.login {
+  gap: 10px;
+}
+.navbar {
+  gap: 40px;
+}
+
+.selected {
+  border-bottom: 2px solid blue;
+}
+/*Flight main*/
+.flightmain-comp {
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  height: 300px;
+  padding: 50px;
+  gap: 20px;
+}
+.flightmain-comp-top {
+  justify-content: space-around;
+  gap: 10px;
+}
+.fmain-btn {
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+.flightmain-from,
+.flightmain-to,
+.flightmain-date,
+.flightmain-passengers {
+  border: 1px solid gray;
+  padding: 20px;
+  height: 150px;
+  gap: 5px;
+}
+
+/*passengers-comp*/
+.passengers-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 1;
+}
+.passengers-comp {
+  border: 1px solid gray;
+  width: 250px;
+  height: 150px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 2;
+}
+.pass-adult,
+.pass-child {
+  padding: 3px;
+  margin-left: 5px;
+}
+.pass-class {
+  margin-left: 5px;
+}
+
+/*Flight List*/
+
+.flightlist-comp {
+  gap: 10px;
+  padding: 20px;
+}
+.flightlist-bottom {
+  gap: 10px;
+}
+.flightlist-params {
+  width: 100%;
+  height: 50px;
+  border: 2px solid red;
+}
+.flightlist-filters {
+  min-height: 800px;
+  min-width: 30%;
+  border: 2px solid black;
+}
+.flightlist-list {
+  min-height: 1000px;
+  min-width: 70%;
+  border: 2px solid greenyellow;
+}
+/*Offers*/
+.offers-comp {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 500px;
+}
+.offers-comp-top {
+  margin-bottom: 15px;
+}
+/*Offers Nav*/
+.offersnav {
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.offersnav-head {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.offers-nav-bottom {
+  gap: 15px;
+  border-bottom: 1px solid black;
+  font-size: large;
+
+  /* width: fit-content; */
+}
+
+/*Hotel main comp*/
+.hotelmain-comp {
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  height: 300px;
+  padding: 50px;
+}
+
+.hotelmain-comp-top {
+  gap: 20px;
+  justify-content: space-around;
+}
+.hotelmain-searchbtn {
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+.hotelmain-loc,
+.hotelmain-checkin,
+.hotelmain-checkout,
+.hotelmain-guests {
+  border: 1px solid gray;
+  padding: 20px;
+  height: 150px;
+  gap: 5px;
+}
+/*Train main*/
+.trainmain-comp {
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  height: 300px;
+  padding: 50px;
+  gap: 20px;
+}
+.trainmain-top {
+  justify-content: space-around;
+}
+.trainmain-btn {
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+.tranmain-from,
+.trainmain-to,
+.trainmain-date {
+  border: 1px solid gray;
+  padding: 20px;
+  height: 150px;
+  gap: 5px;
+}
+/*Buses main*/
+.busesmain-comp {
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  height: 300px;
+  padding: 50px;
+  gap: 20px;
+}
+.busesmain-comp-top {
+  justify-content: space-around;
+}
+.busesmain-btn {
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+.busesmain-from,
+.busesmain-to,
+.busesmain-date {
+  border: 1px solid gray;
+  padding: 20px;
+  height: 150px;
+  gap: 5px;
+}
+
+/*Offers card*/
+.offers-card-comp {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  padding: 10px;
+  min-width: 400px;
+  height: 180px;
+  gap: 10px;
+  border-radius: 5px;
+}
+.offcar-img > img {
+  width: 120px;
+  height: 120px;
+}
+.offers-comp-top,
+.offers-comp-bottom {
+  gap: 10px;
+}
+.offcar-info {
+  gap: 10px;
+}
+.offcar-bottom {
+  justify-content: space-between;
+}
+.offcar-txt {
+  font-size: x-small;
+}
+.offcar-txt::first-letter {
+  text-transform: uppercase;
+}
+
+/*Offers comp*/
+.offers-comp {
+  display: flex;
+  overflow: hidden;
+}
