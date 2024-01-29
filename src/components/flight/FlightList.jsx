@@ -5,6 +5,8 @@ const FlightList = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const { from, to, date, passengers } = Object.fromEntries(searchParams)
 
+    console.log(searchParams)
+
     return (
         <div className='flightlist-comp df fdc'>
             <div className="flightlist-params">

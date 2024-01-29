@@ -14,10 +14,10 @@ export async function getData(url) {
   });
   const data = await res.json();
   console.log("helper data = ", data);
-  return data.data.offers;
+  return data;
 }
 
-export async function getDataAuth() {
+export async function getDataAuth(url) {
   const res = await fetch(url, {
     method: "GET",
     headers: {
@@ -27,5 +27,6 @@ export async function getDataAuth() {
     },
   });
   const data = await res.json();
+  console.log("helper auth data = ", data);
   return data;
 }

@@ -17,13 +17,12 @@ const Offers = () => {
 
     useEffect(() => {
         const url = 'https://academics.newtonschool.co/api/v1/bookingportals/offers'
-        getData(url).then(data => { console.log('data in comp', data); setOffersData(data) })
-        console.log(offersData)
+        getData(url).then(data => setOffersData(data))
+
     }, [])
     if (!offersData) return
 
     const firstHalf = offersData.slice(0, Math.floor(offersData.length / 2))
-    console.log('fhalf = ', firstHalf)
     const secondHalf = offersData.slice(Math.floor(offersData.length / 2))
 
 
